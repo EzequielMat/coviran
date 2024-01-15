@@ -42,23 +42,23 @@ body {
     align-items: end;
 }
 
+
 .text-center {
     text-align: center;
+    
 }
 
+/*overflow: hidden;*/
 .container {
     width: 95%;
     margin: 0 auto;
 }
-/*overflow: hidden;*/
-header {
+
+.bg-g {
     background-color: #285b35;
     padding: 8px;
 }
-.bg-w{
-    background-color: white;
-}
-a {
+header div a{
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -66,12 +66,79 @@ a {
 }
 
 img[src="img/portugal.png"] {
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
     
 }
 img[src="img/facebook_20.png"] {
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
     
+}
+nav{
+    margin-left: 30px;
+}
+ nav ul a{
+    color: grey;
+}
+nav ul li:hover a[href="QUIENES SOMOS"]{
+    color: #285b35;
+}
+
+ nav ul,li {
+    padding: 0;
+    margin: 0;
+}
+ nav ul li ul li {
+    padding: 0;
+    margin: 0;
+}
+ nav ul li {
+    padding: 8px;
+    text-decoration: none;
+    display: inline;
+    float: left;
+    position: relative;
+}
+ nav ul li ul {
+    display: none;
+    position: absolute;
+    margin-top: 8px;
+    z-index: 1;
+    width: 240px;
+    background-color: white;
+}
+ nav ul li ul li {
+    display: flex; 
+    padding: 5px;
+    width: 100%;
+}
+ nav ul li:hover ul {
+    display: block;
+   
+}
+nav ul li ul a{
+    color: black; 
+}
+nav ul li ul li:hover {
+    color: black;
+   background-color: gray;
+   
+}
+.fondo{
+    background-image: url(../img/coviran-bustamante.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    overflow: hidden;
+}
+.fondo img{
+ margin-left: 3000px;
+}
+.fondo:hover img{
+    transition: margin-left 1s;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+
 }
