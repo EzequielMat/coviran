@@ -1,5 +1,8 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px 1px grey;
+    width: 95%;
+    margin: 0 auto;
 }
 
 * {
@@ -49,10 +52,6 @@ body {
 }
 
 /*overflow: hidden;*/
-.container {
-    width: 95%;
-    margin: 0 auto;
-}
 
 .bg-g {
     background-color: #285b35;
@@ -134,6 +133,10 @@ nav ul li ul li:hover {
 }
 .fondo img{
  margin-left: 3000px;
+ transition-delay: 1s;
+ transition: margin-left 3s;
+ transform: translateX(-50%);
+ margin-top: 40px;
 }
 .fondo:hover img{
     transition: margin-left 1s;
@@ -141,4 +144,58 @@ nav ul li ul li:hover {
     transform: translateX(-50%);
     margin-top: 40px;
 
+}
+.col-3{
+    margin: 20px;
+    width: 30%;
+    box-shadow: 1px 1px 10px 1px grey;
+    text-align: center;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.col-3 img{
+   border-top-right-radius:20px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+.col-3 h2{
+ font-size: 21px;
+}
+.cristal {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.0)
+}
+.cristal:hover {
+    transition: background-color 1s;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.bg-gc{
+    background-color: #297b3c;
+    padding: 20px;
+}
+.line-4{
+    width: 23%;
+    border-bottom:2px solid white ;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.line-4 a{
+    font-size: 20px;
+    text-decoration: none;
+    color:white
+}
+.patrocinadores img{
+align-items: center;
+}
+.patrocinadores p{
+    padding-left: 20px;
+    color:white
 }
